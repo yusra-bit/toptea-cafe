@@ -7,6 +7,13 @@ module.exports = {
         hero: "url('/cafe.jpg')",
       }),
     },
+    variants: {
+      extend: {
+        display: ['group-focus'],
+        opacity: ['group-focus'],
+        inset: ['group-focus']
+      }
+    },
   },
   plugins: [],
 }
