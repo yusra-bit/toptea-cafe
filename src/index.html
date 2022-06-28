@@ -12,30 +12,112 @@
 <section class="w-full h-screen bg-center bg-cover bg-hero saturate-25 lg:object-fill ">
   
   <!---navbar-->
-  <nav class="fixed top-0 left-0 bg-white w-full shadow">
-    <div class="container m-auto flex justify-between items-center text-gray-700">
-      <h1 class="pl-8 py-4 text-xl font-bold">HARTDEV</h1>
-      <ul class="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
-        <li class="hover:bg-gray-200 py-4 px-6"><a href="">Home</a> </li>
-        <li class="hover:bg-gray-200 py-4 px-6"><a href="content.html">Contact</a> </li>
+  <nav class="md:relative fixed top-0 left-0  w-full nav bg-amber-900 bg-opacity-40 lg:bg-transparent  ">
+    <div class="container m-auto flex justify-between items-center  ">
+      <a href="index.html"><img class ="pl-6 py-4 " src="/logo.png"  alt="Tea Top Logo" width="100">
+      </a>
+      <ul class="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer text-white ">
+        <li class="hover:text-gray-200 py-4 px-6"><a href="">Home</a> </li>
+        <li class="hover:text-gray-200 px-6 "><a href="#contact">Contact</a> </li>
   
       </ul>
-      <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group"> 
-        <div class="w-5 h-1 bg-gray-600 mb-1"></div>
-        <div class="w-5 h-1 bg-gray-600 mb-1"></div>
-        <div class="w-5 h-1 bg-gray-600"></div>
-        <div class="absolute top-0 -right-full h-screen w-8/12 bg-white border opacity-0
-        group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
-          <ul class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
-            <li class="hover:bg-gray-200 py-4 px-6 w-full"><a href="">Home</a> </li>
-            <li class="hover:bg-gray-200 py-4 px-6 w-full"><a href="content.html">Contact</a> </li>
+      <button class="block md:hidden  py-3 px-4 mx-2 rounded focus:outline-none group"> 
+        <div class="w-8 h-1 bg-white rounded mb-1"></div>
+        <div class="w-6 h-1 bg-white rounded mb-1"></div>
+        <div class="w-4 h-1 bg-white rounded"></div>
+        <div class="absolute top-0 -right-full h-screen w-8/12 bg-stone-100 border opacity-0
+        group-focus:right-0 group-focus:opacity-100 transition-all duration-300 drop-shadow-md">
+          <ul class="flex flex-col items-center w-full text-base cursor-pointer pt-10 font-semibold">
+            <li class="hover:text-slate-400 py-10 px-6 w-full"><a href="">Home</a> </li>
+            <li class="hover:text-slate-400 py-10 px-6 w-full"><a href="#contact">Contact</a> </li>
           </ul>
         </div>
       </button>
     </div>
   </nav>
+  <!--- Hero Page header text-->
 
+ <div class="flex h-screen justify-center items-center">
+  <div class="text-center text-white"> <!-- ⬅️ THIS DIV WILL BE CENTERED -->
+      <h1 class="text-5xl lg:text-7xl font-bold mb-7 font-serif">TEA TOP</h1>
+      <p class="text-2xl font-base px-16 font-sans">Gathering with friends around good food & drinks </p>
+  </div>
+</div>
 </section>
 
+<!--Café Menu-->
+
+<div class="w-full h-screen">
+  <!---header-->
+  <div class="text-center">
+    <h1 class="font-serif text-5xl py-10 font-bold">Menu</h1>
+  </div>
+  <div class="md:flex text-center prose">
+   <div class="md:w-1/3">
+     <h1 class=" text-2xl font-bold text-amber-800 mb-4">Type</h1>
+    <p class="leading-loose text-xl">Something</p>
+    <p class="leading-loose text-xl">Something</p>
+    <p class="leading-loose text-xl mb-6">Something</p>
+   </div>
+   <div class="md:w-1/3">
+    <h1 class=" text-2xl font-bold text-amber-800 mb-4">Type</h1>
+
+    <p class="leading-loose text-xl">Something</p>
+    <p class="leading-loose text-xl">Something</p>
+    <p class="leading-loose text-xl mb-6">Something</p>
+  </div>
+  <div class="md:w-1/3">
+    <h1 class=" text-2xl font-bold text-amber-800 mb-4">Type</h1>
+    <p class="leading-loose text-xl">Something</p>
+    <p class="leading-loose text-xl">Something</p>
+    <p class=" leading-loose text-xl mb-6">Something</p>
+  </div>
+  </div>
+</div>
+
+
+<!--Little gallery connected to insta  -->
+<div class="pb-10 w-full ">
+  <a href="">
+  <img src="../gallery.jpg" alt=""></a>
+</div>
+
+<!--opening time & contact--->
+<div class="md:flex ml-32 lg:ml-0">
+  <div class="md:w-1/2 lg:ml-64 ">  
+   <h1 class="text-2xl border-y-4 border-black w-64 mb-2 font-serif">Opening time</h1>
+    <p class="text-gray-600 mb-2">Saturday-Thursday 7am - 12pm </p>
+     <p class="text-gray-600 mb-4">Friday  4pm - 11pm</p>  
+  </div>
+  <div class="md:w-1/2">
+    <h1 class="text-2xl border-y-4 border-black w-64 mb-2 font-serif">Contact</h1>
+    <p class="text-gray-600 mb-2 ">📍somewhere in jigjiga yar</p>
+    <p class="text-gray-600 mb-4">📞 111- 121- 211</p>
+  </div>
+</div>
+
+<!--footer-->
+<footer class="bg-amber-900 body-font ">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <img src="../logo.png" alt="" width="50">
+    <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-white-200 sm:py-2 sm:mt-0 mt-4">© 2022 Tea Top Cafe 
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-white">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+   
+      <a class="ml-3 text-white">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+     
+    </span>
+  </div>
+</footer>
 </body>
 </html>
