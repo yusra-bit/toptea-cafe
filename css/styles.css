@@ -145,16 +145,19 @@ font-weight: bold;
 
 }
 .location-section{
-  background-color: rgb(0, 0, 0);
-  height:100%;
-  width: 100%;
-  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
 }
 .location-heading{
 text-align: center;
-color: white;
+color: rgb(146, 94, 26);
+padding: 20px;
 }
-
+.menu{
+  
+  border: 1px solid rgb(146, 94, 26);
+  border-radius: 20px;
+}
 
 @media (max-width: 868px){
     .icon{
