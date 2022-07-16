@@ -135,7 +135,7 @@ input[type="button"]:hover{
 }
 input[type="button"]:focus{
 background-color: rgb(146, 94, 26);
-    color:white;
+color:white;
    
 
 }
@@ -195,5 +195,14 @@ padding: 20px;
       font-size:23px;   
       color: white;
     }
+    input[type="button"]:hover{
     
+      color:rgb(146, 94, 26) ;
+  }
+  input[type="button"]:focus{
+  background-color: rgb(146, 94, 26);
+  color:white;
+     
+  
+  }
 }
