@@ -123,6 +123,7 @@ body, html {
 .cold-drink,
 .milkshake{
     border: none;
+    color: black;
     background-color: white;
     border: 2px solid rgb(146, 94, 26);
     border-radius: 20px;
