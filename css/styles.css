@@ -129,11 +129,11 @@ body, html {
     border-radius: 20px;
     padding: 4px 8px;
 }
-button[type='buttom']:hover{
+input[type="button"]:hover{
     
     color:rgb(146, 94, 26) ;
 }
-button:focus{
+input[type="button"]:focus{
 background-color: rgb(146, 94, 26);
     color:white;
    
