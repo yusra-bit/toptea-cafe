@@ -94,15 +94,11 @@ body, html {
   color: white;
   font-weight: 800;
   font-size: 3rem;
-  padding: 100px 35px; 
+  padding: 50px 35px; 
   line-height: 1.4;
   text-align: center;
   }
-  .icon{  text-align: center;
-
-    font-size: 1rem;
-
-  }
+  
 .view-btn{
   border: 2px solid white;
   color: white;
