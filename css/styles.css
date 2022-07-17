@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Mali', cursive;
-}
+    font-family: 'Patrick Hand SC', cursive;
+
+  }
 
 .content{
-  max-width:1250px;
-  margin:auto;
-  padding:0px 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 .navigation{
  
@@ -22,8 +23,12 @@
   align-items:center;
   justify-content:space-between;
 }
+.logo img{
+    width: 70%;
+
+}
 .logo{
-    padding-top: 15px;
+    padding:20px 15px;
 }
 
 .navigation .menu-list{
@@ -31,11 +36,12 @@
 }
 .menu-list li{
   list-style:none;
+  padding-right: 30px;
 }
 .menu-list li a{
   color:black;
-  font-size:18px;
-  font-weight:500;
+  font-size:2rem;
+  font-weight: 800;
   margin-left:25px;
   text-decoration:none;
   transition: all 0.3s ease;
@@ -60,18 +66,7 @@ li a:where(:hover, :focus-visible) {
 .menu-list li a{
   color: white;
 }
-.icon{
-  color:white;
-  font-size:40px;
-  cursor:pointer;
-  display:none;
-}
-.icon.cancel-btn{
-  position: absolute;
-  right:30px;
-  top:20px;
- 
-}
+
 
 .show{
     display: block;
@@ -96,21 +91,38 @@ body, html {
   opacity: 0.91;
 }
 .center {
-    color: white;
-    font-weight: 800;
-    font-size: 2.1rem;
-    padding: 200px 35px; 
-    line-height: 1.4;
-    text-align: center;
+  color: white;
+  font-weight: 800;
+  font-size: 3rem;
+  padding: 100px 35px 5px 35px; 
+  line-height: 1.4;
+  text-align: center;
   }
+  .icon{  text-align: center;
+
+    font-size: 1rem;
+
+  }
+.view-btn{
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 10px 10px;
+  
+  
+  
+}
 
 .menu-section{
     padding: 30px 10%;
 }
-
+.menu-heading{
+  padding-bottom: 10px;
+}
 .letter{
-  font-weight: bolder;
-  color:rgb(146, 94, 26);
+  font-size: 2.3rem;
+  color:#886F6F;
 
 }
 
@@ -121,33 +133,36 @@ body, html {
 .hot-drink,
 .cold-drink,
 .milkshake{
+  font-size: 1.1rem;
     border: none;
     color: black;
     background-color: white;
-    border: 2px solid rgb(146, 94, 26);
-    border-radius: 20px;
-    padding: 4px 8px;
+    border: 2px solid #886F6F;
+    border-radius: 50px;
+    padding: 10px 8px;
 }
 input[type="button"]:hover{  
-    color:rgb(146, 94, 26) ;
+    color:#886F6F ;
 }
 input[type="button"]:focus{
-background-color: rgb(146, 94, 26);
-color:white;
- font-weight: bold;
+  background-color: #886F6F;
+  color:white;
+  font-weight: bold;
 
 
 }
 
 .location-section{
- color: white;
-  background-color: rgb(146, 94, 26);
-padding: 20px;
-font-weight: lighter;
+  color: white;
+  background-color: #886F6F;
+  padding: 20px;
+  font-weight: lighter;
 }
 .location-heading{
-text-align: center;
-color: white;
+  text-align: center;
+  font-size: 2.4rem;
+  color: white;
+  padding-bottom: 10px;
 
 }
 .mini-gallary{
@@ -155,13 +170,11 @@ color: white;
   padding-bottom: 20px;
 }
 .menu{
-  
-  border: 1px solid rgb(146, 94, 26);
+  font-size: 1.3rem;
+  border: 1px dashed rgb(146, 94, 26);
   border-radius: 20px;
 }
-.icon{
-  width: 10px;
-}
+
 .insta{
   text-decoration: none;
   color: black;
@@ -173,49 +186,28 @@ color: white;
 
 footer img{
   padding-top: 40px;
+  padding-left: 10px;
 }
 .opening-time,
 .contact-us {
   padding-top: 25px;
 }
+h4{
+  font-size: 2rem;
+}
+
 @media (max-width: 868px){
-    .icon{
-      display:block;
-    }
-    .icon.hide{
-      display:none;
-    }
+  
    
-    .navigation .menu-list{
-      position:fixed;
-      top:0;
-      left:-100%;
-      height:100vh;
-      width:100%;
-      max-width:400px;
-      background-color:black;
-      opacity: 0.96;
-      display:block;
-      padding:40px;
-      text-align:center;
-      transition: all 0.3s ease;
-    }
     
-    .navigation .menu-list.active{
-      left:0%;
-    }
-    
-    .navigation .menu-list li{
-      margin-top:45px;
-    }
+  
     
     .navigation .menu-list li a{
       font-size:23px;   
       color: white;
     }
     footer{
-      display: flex;
-     
+      display: flex;  
       text-align: center;
     }
 }

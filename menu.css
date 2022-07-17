@@ -1,0 +1,150 @@
+#hero {
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.3)),
+        to(rgba(0, 0, 0, 0.3))
+      ),
+      url("/assets/coffee_7.jpg");
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/assets/coffee_7.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/assets/coffee_7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 50%;
+  }
+  
+  .hero-header {
+    text-align: center;
+  }
+  
+  .menus {
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .menu-container {
+    color: #000000;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  
+  .menu-subtext {
+    text-align: center;
+    margin-bottom: 55px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 14px;
+  }
+  
+  .menu-box {
+    background-color: white;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 10px;
+    width: 90%;
+    -ms-flex-preferred-size: none;
+    flex-basis: none;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  .menu-box h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  #menu-header {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.5em;
+  }
+  
+  .menu-text {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .column-texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .menu-box:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .price {
+    color: #b68834;
+  }
+  
+  /** Tablet screens **/
+  @media (min-width: 768px) {
+    #hero {
+      padding-top: 200px;
+      padding-bottom: 150px;
+    }
+  
+    .hero-header {
+      font-size: 3em;
+    }
+  
+    .menu-title {
+      padding-top: 100px;
+      padding-bottom: 15px;
+    }
+  
+    .menus {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  
+  /** Desktop screens **/
+  @media (min-width: 1024px) {
+    .menu-box {
+      -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+    }
+  
+    #hero {
+      background-attachment: fixed;
+    }
+  }
