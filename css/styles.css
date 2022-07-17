@@ -40,7 +40,7 @@
 }
 .menu-list li a{
   color:black;
-  font-size:2rem;
+  font-size:1.7rem;
   font-weight: 800;
   margin-left:25px;
   text-decoration:none;
@@ -93,9 +93,9 @@ body, html {
 .center {
   color: white;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 50px 35px; 
-  line-height: 1.4;
+  line-height: 1.2;
   text-align: center;
   }
   
