@@ -88,7 +88,6 @@ body, html {
 .hero{
     background-image: url('https://images.squarespace-cdn.com/content/v1/5c5420d090f904235409c56f/1593685831217-19L850WLD5H3QB27EN01/image-asset.jpeg');
     height: 100%;
-
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -129,37 +128,56 @@ body, html {
     border-radius: 20px;
     padding: 4px 8px;
 }
-input[type="button"]:hover{
-    
+input[type="button"]:hover{  
     color:rgb(146, 94, 26) ;
 }
 input[type="button"]:focus{
 background-color: rgb(146, 94, 26);
 color:white;
-   
+ font-weight: bold;
+
 
 }
 
-
-button{
-font-weight: bold;
-
-}
 .location-section{
-  display: flex;
-  justify-content: center;
+ color: white;
+  background-color: rgb(146, 94, 26);
+padding: 20px;
+font-weight: lighter;
 }
 .location-heading{
 text-align: center;
-color: rgb(146, 94, 26);
-padding: 20px;
+color: white;
+
+}
+.mini-gallary{
+  width: 100%;
+  padding-bottom: 20px;
 }
 .menu{
   
   border: 1px solid rgb(146, 94, 26);
   border-radius: 20px;
 }
+.icon{
+  width: 10px;
+}
+.insta{
+  text-decoration: none;
+  color: black;
+}
+.insta:hover{
+  
+  color: rgb(146, 94, 26)
+}
 
+footer img{
+  padding-top: 40px;
+}
+.opening-time,
+.contact-us {
+  padding-top: 25px;
+}
 @media (max-width: 868px){
     .icon{
       display:block;
@@ -195,14 +213,9 @@ padding: 20px;
       font-size:23px;   
       color: white;
     }
-    input[type="button"]:hover{
-    
-      color:rgb(146, 94, 26) ;
-  }
-  input[type="button"]:focus{
-  background-color: rgb(146, 94, 26);
-  color:white;
+    footer{
+      display: flex;
      
-  
-  }
+      text-align: center;
+    }
 }
