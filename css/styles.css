@@ -6,13 +6,16 @@
 
   }
 
+/*  Hero & Navbar Section **/  
+body, html {
+    height: 100%;
+}
 .content{
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
 .navigation{
- 
   z-index:4;
   width:100%;
   padding:10px 0;
@@ -25,7 +28,6 @@
 }
 .logo img{
     width: 70%;
-
 }
 .logo{
     padding:20px 15px;
@@ -39,7 +41,6 @@
   padding-right: 30px;
 }
 .menu-list li a{
-  color:black;
   font-size:1.7rem;
   font-weight: 800;
   margin-left:25px;
@@ -54,7 +55,7 @@ li a {
 }
 li a:where(:hover, :focus-visible) {
     background-size: 100% var(--bg-h);
-  background-position-x: left;
+    background-position-x: left;
 }
 
 .underline {
@@ -68,20 +69,9 @@ li a:where(:hover, :focus-visible) {
 }
 
 
-.show{
-    display: block;
-}
-.remove{
-    display: none;
-}
-
-
-body, html {
-    height: 100%;
-}
 
 .hero{
-    background-image: url('https://images.squarespace-cdn.com/content/v1/5c5420d090f904235409c56f/1593685831217-19L850WLD5H3QB27EN01/image-asset.jpeg');
+    background-image: url('../images/hero-img.png');
     height: 100%;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -90,24 +80,32 @@ body, html {
   position: relative;
   opacity: 0.91;
 }
+.show{
+    display: block;
+}
+.remove{
+    display: none;
+}
+
+
+
+
+
 .center {
   color: white;
   font-weight: 800;
-  font-size: 2.5rem;
-  padding: 50px 35px; 
+  font-size: 3rem;
+  padding: 60px 35px; 
   line-height: 1.2;
   text-align: center;
   }
   
-.view-btn{
-  border: 2px solid white;
-  color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  padding: 10px 10px;
-  
-  
-  
+
+/** Food Menu */
+.menu{
+  font-size: 1.3rem;
+  border: 1px dashed rgb(146, 94, 26);
+  border-radius: 20px;
 }
 
 .menu-section{
@@ -119,8 +117,35 @@ body, html {
 .letter{
   font-size: 2.3rem;
   color:#886F6F;
-
+  font-weight: bold;
 }
+.pt-100{
+  padding-top:100px;
+}
+.pb-100{
+  padding-top:100px;
+}
+.mb-60 {
+margin-bottom: 60px;
+}
+
+.single_menu_list h4 {
+font-size: 20px;
+font-weight: bolder;
+padding-bottom: 15px;
+margin-bottom: 10px;
+}
+.single_menu_list h4 span {
+float: right;
+font-weight: bold;
+color: #886F6F;
+font-style: italic;
+}
+
+.menu_style1 .single_menu_list {
+text-align: left;
+}
+
 
 .all,
 .drink,
@@ -148,6 +173,10 @@ input[type="button"]:focus{
 
 }
 
+
+/** Map Location Section */
+
+
 .location-section{
   color: white;
   background-color: #886F6F;
@@ -165,20 +194,8 @@ input[type="button"]:focus{
   width: 100%;
   padding-bottom: 20px;
 }
-.menu{
-  font-size: 1.3rem;
-  border: 1px dashed rgb(146, 94, 26);
-  border-radius: 20px;
-}
+/**Footer*/
 
-.insta{
-  text-decoration: none;
-  color: black;
-}
-.insta:hover{
-  
-  color: rgb(146, 94, 26)
-}
 
 footer img{
   padding-top: 40px;
@@ -191,10 +208,25 @@ footer img{
 h4{
   font-size: 2rem;
 }
+.insta{
+  text-decoration: none;
+  color: black;
+}
+.insta:hover{
+  
+  color: rgb(146, 94, 26)
+}
 
 @media (max-width: 868px){
   
-   
+   .center{
+    color: white;
+    font-weight: 800;
+    font-size: 2.6rem;
+    padding: 90px 35px; 
+    line-height: 1.2;
+    text-align: center;
+   }
     
   
     
